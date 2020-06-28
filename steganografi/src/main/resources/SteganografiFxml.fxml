@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane fx:id="basePane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.tr.FxmlController.SteganografiPaneController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <GridPane minWidth="900" minHeight="500" gridLinesVisible="false">
+
+        <ImageView  fx:id="imageFxml" GridPane.rowIndex="2" GridPane.columnIndex="1"  GridPane.columnSpan="5" GridPane.rowSpan="5"/>
+        <Button fx:id="imageChose" text="Resim Seç" GridPane.rowIndex="3" GridPane.columnIndex="7"/>
+        <Button fx:id="encode" text="Şifrele" GridPane.rowIndex="3" GridPane.columnIndex="8"/>
+        <Button fx:id="decode" text="Şifre Çöz" GridPane.rowIndex="3" GridPane.columnIndex="9"/>
+        <TextArea fx:id="textAreaFxml" promptText="Metin Giriniz" maxWidth="-Infinity" minHeight="-Infinity" GridPane.rowIndex="5" GridPane.columnIndex="7" GridPane.rowSpan="5" GridPane.columnSpan="3"/>
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" percentWidth="5"/>
+            <ColumnConstraints halignment="CENTER" percentWidth="10"/>
+            <ColumnConstraints halignment="CENTER" percentWidth="10"/>
+            <ColumnConstraints halignment="CENTER" percentWidth="10"/>
+            <ColumnConstraints halignment="CENTER" percentWidth="10"/>
+            <ColumnConstraints halignment="CENTER" percentWidth="10"/>
+            <ColumnConstraints halignment="CENTER" percentWidth="10"/>
+            <ColumnConstraints halignment="CENTER" percentWidth="10"/>
+            <ColumnConstraints halignment="CENTER" percentWidth="10"/>
+            <ColumnConstraints halignment="CENTER" percentWidth="10"/>
+            <ColumnConstraints halignment="CENTER" percentWidth="5"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints valignment="CENTER" percentHeight="5"/>
+            <RowConstraints valignment="CENTER" percentHeight="10"/>
+            <RowConstraints valignment="CENTER" percentHeight="10"/>
+            <RowConstraints valignment="CENTER" percentHeight="10"/>
+            <RowConstraints valignment="CENTER" percentHeight="10"/>
+            <RowConstraints valignment="CENTER" percentHeight="10"/>
+            <RowConstraints valignment="CENTER" percentHeight="10"/>
+            <RowConstraints valignment="CENTER" percentHeight="10"/>
+            <RowConstraints valignment="CENTER" percentHeight="10"/>
+            <RowConstraints valignment="CENTER" percentHeight="10"/>
+            <RowConstraints valignment="CENTER" percentHeight="5"/>
+        </rowConstraints>
+    </GridPane>
+
+</AnchorPane>
